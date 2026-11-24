@@ -38,10 +38,7 @@
       min-height: 100dvh;
     }
 
-    button, input, select, textarea {
-      font-family: inherit;
-    }
-
+    button, input, select, textarea { font-family: inherit; }
     .hidden { display: none !important; }
 
     /* ==================== LOGIN VIEW ==================== */
@@ -94,10 +91,7 @@
       letter-spacing: 0.01em;
     }
 
-    .hero-pill .divider {
-      opacity: 0.55;
-      font-weight: 400;
-    }
+    .hero-pill .divider { opacity: 0.55; font-weight: 400; }
 
     .login-card h1 {
       margin: 18px 0 6px;
@@ -112,6 +106,7 @@
       color: var(--muted);
     }
 
+    /* ป้องกันเบราว์เซอร์ Autofill รหัสผ่าน และซ่อนตัวอักษรเป็นจุด */
     .pin-input {
       width: 100%;
       border: 1.5px solid #CBD5E1;
@@ -123,6 +118,7 @@
       padding: 12px;
       color: var(--text);
       background: #FFFFFF;
+      -webkit-text-security: disc;
       transition: border-color 0.15s, box-shadow 0.15s;
     }
 
@@ -174,56 +170,16 @@
       white-space: nowrap;
     }
 
-    .btn:disabled {
-      opacity: 0.55;
-      cursor: not-allowed;
-    }
-
-    .btn-primary {
-      background: var(--jm-red);
-      color: #FFFFFF;
-    }
-
-    .btn-primary:hover:not(:disabled) {
-      background: var(--jm-red-dark);
-    }
-
-    .btn-dark {
-      background: #0F172A;
-      color: #FFFFFF;
-    }
-
-    .btn-dark:hover:not(:disabled) {
-      background: #1E293B;
-    }
-
-    .btn-outline {
-      background: #FFFFFF;
-      color: #334155;
-      border: 1px solid #CBD5E1;
-    }
-
-    .btn-outline:hover:not(:disabled) {
-      background: #F8FAFC;
-      border-color: #94A3B8;
-    }
-
-    .btn-danger-soft {
-      background: var(--jm-red-soft);
-      color: var(--jm-red);
-      border: 1px solid #FECACA;
-    }
-
-    .btn-danger-soft:hover:not(:disabled) {
-      background: #FEE2E2;
-    }
-
-    .btn-sm {
-      padding: 6px 11px;
-      font-size: 13px;
-      border-radius: 8px;
-    }
-
+    .btn:disabled { opacity: 0.55; cursor: not-allowed; }
+    .btn-primary { background: var(--jm-red); color: #FFFFFF; }
+    .btn-primary:hover:not(:disabled) { background: var(--jm-red-dark); }
+    .btn-dark { background: #0F172A; color: #FFFFFF; }
+    .btn-dark:hover:not(:disabled) { background: #1E293B; }
+    .btn-outline { background: #FFFFFF; color: #334155; border: 1px solid #CBD5E1; }
+    .btn-outline:hover:not(:disabled) { background: #F8FAFC; border-color: #94A3B8; }
+    .btn-danger-soft { background: var(--jm-red-soft); color: var(--jm-red); border: 1px solid #FECACA; }
+    .btn-danger-soft:hover:not(:disabled) { background: #FEE2E2; }
+    .btn-sm { padding: 6px 11px; font-size: 13px; border-radius: 8px; }
     .btn-block { width: 100%; }
 
     .alert {
@@ -234,7 +190,6 @@
       line-height: 1.45;
       text-align: left;
     }
-
     .alert-danger { background: var(--jm-red-soft); color: var(--jm-red); border: 1px solid #FECACA; }
     .alert-success { background: var(--success-soft); color: #166534; border: 1px solid #BBF7D0; }
 
@@ -260,18 +215,8 @@
       box-shadow: 0 2px 10px rgba(200, 16, 24, 0.2);
     }
 
-    .jm-brand {
-      display: flex;
-      align-items: center;
-      gap: 14px;
-      cursor: pointer;
-    }
-
-    .jm-logo-group {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+    .jm-brand { display: flex; align-items: center; gap: 14px; cursor: pointer; }
+    .jm-logo-group { display: flex; align-items: center; gap: 8px; }
 
     .jm-logo-pill {
       background: #FFFFFF;
@@ -283,38 +228,12 @@
       letter-spacing: 0.01em;
     }
 
-    .jm-mobile-text {
-      font-weight: 800;
-      font-size: 16px;
-      letter-spacing: 0.03em;
-    }
+    .jm-mobile-text { font-weight: 800; font-size: 16px; letter-spacing: 0.03em; }
+    .jm-vbar { width: 1px; height: 30px; background: rgba(255, 255, 255, 0.35); }
+    .jm-app-name h2 { margin: 0; font-size: 17px; font-weight: 700; line-height: 1.2; }
+    .jm-app-name span { display: block; font-size: 11.5px; opacity: 0.88; font-weight: 400; }
 
-    .jm-vbar {
-      width: 1px;
-      height: 30px;
-      background: rgba(255, 255, 255, 0.35);
-    }
-
-    .jm-app-name h2 {
-      margin: 0;
-      font-size: 17px;
-      font-weight: 700;
-      line-height: 1.2;
-    }
-
-    .jm-app-name span {
-      display: block;
-      font-size: 11.5px;
-      opacity: 0.88;
-      font-weight: 400;
-    }
-
-    .jm-nav {
-      display: flex;
-      align-items: center;
-      gap: 6px;
-      flex-wrap: wrap;
-    }
+    .jm-nav { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
 
     .jm-nav-btn {
       border: none;
@@ -327,16 +246,8 @@
       cursor: pointer;
       transition: background 0.15s, color 0.15s;
     }
-
-    .jm-nav-btn:hover {
-      background: rgba(255, 255, 255, 0.14);
-    }
-
-    .jm-nav-btn.active {
-      background: #FFFFFF;
-      color: var(--jm-red);
-      font-weight: 700;
-    }
+    .jm-nav-btn:hover { background: rgba(255, 255, 255, 0.14); }
+    .jm-nav-btn.active { background: #FFFFFF; color: var(--jm-red); font-weight: 700; }
 
     .jm-nav-icon-btn {
       border: 1px solid rgba(255, 255, 255, 0.35);
@@ -348,18 +259,11 @@
       border-radius: 9px;
       cursor: pointer;
     }
+    .jm-nav-icon-btn:hover { background: rgba(255, 255, 255, 0.22); }
 
-    .jm-nav-icon-btn:hover {
-      background: rgba(255, 255, 255, 0.22);
-    }
+    .app-main { flex: 1; width: 100%; }
 
-    /* ==================== MAIN CONTENT AREA ==================== */
-    .app-main {
-      flex: 1;
-      width: 100%;
-    }
-
-    /* ==================== HOME VIEW (MATCHING SCREENSHOT) ==================== */
+    /* ==================== HOME VIEW ==================== */
     .home-wrap {
       max-width: 960px;
       margin: 0 auto;
@@ -425,30 +329,11 @@
       justify-content: center;
       margin-bottom: 20px;
     }
+    .home-card-icon.red { background: #FEF2F2; color: var(--jm-red); }
+    .home-card-icon.slate { background: #F1F5F9; color: #334155; }
 
-    .home-card-icon.red {
-      background: #FEF2F2;
-      color: var(--jm-red);
-    }
-
-    .home-card-icon.slate {
-      background: #F1F5F9;
-      color: #334155;
-    }
-
-    .home-card h3 {
-      margin: 0 0 8px;
-      font-size: 20px;
-      font-weight: 700;
-      color: #0F172A;
-    }
-
-    .home-card p {
-      margin: 0 0 22px;
-      font-size: 14px;
-      color: var(--muted);
-      line-height: 1.6;
-    }
+    .home-card h3 { margin: 0 0 8px; font-size: 20px; font-weight: 700; color: #0F172A; }
+    .home-card p { margin: 0 0 22px; font-size: 14px; color: var(--muted); line-height: 1.6; }
 
     .home-card-link {
       border-top: 1px solid #F1F5F9;
@@ -459,7 +344,6 @@
       align-items: center;
       gap: 6px;
     }
-
     .home-card-link.red { color: var(--jm-red); }
     .home-card-link.dark { color: #0F172A; }
 
@@ -476,19 +360,10 @@
       color: var(--muted);
     }
 
-    .status-dot {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--success);
-    }
+    .status-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--success); }
 
     /* ==================== WORKSPACE VIEWS ==================== */
-    .main-container {
-      max-width: 1420px;
-      margin: 0 auto;
-      padding: 22px 24px 40px;
-    }
+    .main-container { max-width: 1420px; margin: 0 auto; padding: 22px 24px 40px; }
 
     .workspace-grid {
       display: grid;
@@ -496,10 +371,7 @@
       gap: 20px;
       align-items: start;
     }
-
-    @media (max-width: 1024px) {
-      .workspace-grid { grid-template-columns: 1fr; }
-    }
+    @media (max-width: 1024px) { .workspace-grid { grid-template-columns: 1fr; } }
 
     .card {
       background: var(--surface);
@@ -518,16 +390,8 @@
       gap: 10px;
       flex-wrap: wrap;
     }
-
-    .card-header h3 {
-      margin: 0;
-      font-size: 16px;
-      font-weight: 700;
-    }
-
-    .card-body {
-      padding: 18px;
-    }
+    .card-header h3 { margin: 0; font-size: 16px; font-weight: 700; }
+    .card-body { padding: 18px; }
 
     .form-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
     .form-grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
@@ -553,13 +417,7 @@
       color: #475569;
       cursor: pointer;
     }
-
-    .sub-tab.active {
-      background: #FFFFFF;
-      color: var(--jm-red);
-      font-weight: 700;
-      box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
-    }
+    .sub-tab.active { background: #FFFFFF; color: var(--jm-red); font-weight: 700; box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08); }
 
     .paste-box {
       min-height: 155px;
@@ -570,18 +428,31 @@
       background: #FFFDF7;
       border: 2px dashed #FCA5A5;
     }
+    .paste-box:focus { background: #FFFFFF; border-style: solid; border-color: var(--jm-red); }
 
-    .paste-box:focus {
-      background: #FFFFFF;
-      border-style: solid;
-      border-color: var(--jm-red);
+    .hint-text { font-size: 12.5px; color: var(--muted); margin-top: 6px; line-height: 1.5; }
+
+    .mode-toggle-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      background: #FFF7F7;
+      border: 1px solid #FECACA;
+      border-radius: 10px;
+      padding: 10px 14px;
+      margin-bottom: 14px;
+      font-size: 13.5px;
+      flex-wrap: wrap;
     }
 
-    .hint-text {
-      font-size: 12.5px;
-      color: var(--muted);
-      margin-top: 6px;
-      line-height: 1.5;
+    .mode-toggle-bar label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #7F1D1D;
     }
 
     /* ==================== QUEUE & STATS ==================== */
@@ -599,19 +470,8 @@
       padding: 10px 12px;
       text-align: center;
     }
-
-    .stat-box .val {
-      font-size: 22px;
-      font-weight: 800;
-      color: var(--text);
-      line-height: 1.2;
-    }
-
-    .stat-box .lbl {
-      font-size: 12px;
-      color: var(--muted);
-      font-weight: 500;
-    }
+    .stat-box .val { font-size: 22px; font-weight: 800; color: var(--text); line-height: 1.2; }
+    .stat-box .lbl { font-size: 12px; color: var(--muted); font-weight: 500; }
 
     .queue-list {
       display: flex;
@@ -632,22 +492,13 @@
       justify-content: space-between;
       gap: 12px;
     }
-
     .queue-item.has-warn { border-color: #F59E0B; background: #FFFDF5; }
     .queue-item.has-dup { border-color: var(--jm-red); background: #FFF5F5; }
 
     .q-main { min-width: 0; flex: 1; }
     .q-top { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; margin-bottom: 5px; }
 
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      padding: 2px 9px;
-      border-radius: 999px;
-      font-size: 12px;
-      font-weight: 600;
-    }
-
+    .badge { display: inline-flex; align-items: center; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 600; }
     .badge-red { background: var(--jm-red-soft); color: var(--jm-red); }
     .badge-peach { background: var(--peach); color: #9A3412; }
     .badge-slate { background: #E2E8F0; color: #334155; }
@@ -694,11 +545,7 @@
       page-break-after: always;
       break-after: page;
     }
-
-    .a4-page:last-child {
-      page-break-after: auto;
-      break-after: auto;
-    }
+    .a4-page:last-child { page-break-after: auto; break-after: auto; }
 
     .slip-slot {
       height: 137mm;
@@ -717,7 +564,6 @@
       font-family: 'Sarabun', sans-serif;
       font-size: 11px;
     }
-
     .cut-line::before {
       content: '';
       position: absolute;
@@ -726,12 +572,7 @@
       top: 50%;
       border-top: 1px dashed #94A3B8;
     }
-
-    .cut-line span {
-      position: relative;
-      background: #FFFFFF;
-      padding: 0 8px;
-    }
+    .cut-line span { position: relative; background: #FFFFFF; padding: 0 8px; }
 
     .slip-table {
       width: 100%;
@@ -742,16 +583,9 @@
     }
 
     .slip-table col.c-a { width: 7.2%; }
-    .slip-table col.c-b,
-    .slip-table col.c-c,
-    .slip-table col.c-d,
-    .slip-table col.c-e,
-    .slip-table col.c-f,
-    .slip-table col.c-g,
-    .slip-table col.c-h,
-    .slip-table col.c-i,
-    .slip-table col.c-j,
-    .slip-table col.c-k { width: 9.28%; }
+    .slip-table col.c-b, .slip-table col.c-c, .slip-table col.c-d, .slip-table col.c-e,
+    .slip-table col.c-f, .slip-table col.c-g, .slip-table col.c-h, .slip-table col.c-i,
+    .slip-table col.c-j, .slip-table col.c-k { width: 9.28%; }
 
     .slip-table td {
       border: 1px solid #000000;
@@ -776,19 +610,8 @@
     .slip-table td.big-val { font-size: 18pt; font-weight: 800; letter-spacing: 0.02em; }
     .slip-table td.addr-cell { font-size: 10.5pt; font-weight: 700; height: 10.5mm; }
     .slip-table td.label-sm { font-size: 10pt; font-weight: 700; }
-
-    .slip-table tr.spacer-row td {
-      border: none;
-      height: 2.2mm;
-      padding: 0;
-    }
-
-    .slip-table tr.sender-row td {
-      border: none;
-      height: 9mm;
-      padding: 2px 4px;
-    }
-
+    .slip-table tr.spacer-row td { border: none; height: 2.2mm; padding: 0; }
+    .slip-table tr.sender-row td { border: none; height: 9mm; padding: 2px 4px; }
     .slip-table td.sender-name { font-size: 17pt; font-weight: 800; }
     .slip-table td.date-label { font-size: 11pt; font-weight: 700; text-align: right; padding-right: 6px; }
     .slip-table td.date-val { font-size: 17pt; font-weight: 800; text-align: left; }
@@ -796,16 +619,11 @@
     /* ==================== HISTORY TABLE ==================== */
     .table-wrap { overflow-x: auto; }
     .log-table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    .log-table th, .log-table td {
-      border-bottom: 1px solid var(--border);
-      padding: 10px;
-      text-align: left;
-      vertical-align: middle;
-    }
+    .log-table th, .log-table td { border-bottom: 1px solid var(--border); padding: 10px; text-align: left; vertical-align: middle; }
     .log-table th { background: #F8FAFC; font-weight: 600; color: #334155; white-space: nowrap; }
     .log-table tr:hover td { background: #FFF8F8; }
 
-    /* ==================== FOOTER (MATCHING SCREENSHOT) ==================== */
+    /* ==================== FOOTER ==================== */
     .jm-footer {
       background: #FFFFFF;
       border-top: 1px solid var(--border);
@@ -818,36 +636,11 @@
       font-size: 13px;
       color: var(--muted);
     }
-
-    .jm-footer-left {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-
-    .jm-footer-dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 50%;
-      background: var(--jm-red);
-      display: inline-block;
-    }
-
+    .jm-footer-left { display: flex; align-items: center; gap: 8px; }
+    .jm-footer-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--jm-red); display: inline-block; }
     .jm-footer-left strong { color: var(--text); }
-
-    .jm-footer-pill {
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: 5px 14px;
-      font-size: 12.5px;
-      color: var(--muted);
-      background: #FFFFFF;
-    }
-
-    .jm-footer-pill strong {
-      color: var(--jm-red);
-      font-weight: 700;
-    }
+    .jm-footer-pill { border: 1px solid var(--border); border-radius: 999px; padding: 5px 14px; font-size: 12.5px; color: var(--muted); background: #FFFFFF; }
+    .jm-footer-pill strong { color: var(--jm-red); font-weight: 700; }
 
     /* ==================== MODAL & TOAST ==================== */
     .modal-backdrop {
@@ -870,24 +663,10 @@
       border-radius: 18px;
       box-shadow: 0 25px 50px rgba(15, 23, 42, 0.25);
     }
-
-    .modal-header {
-      padding: 16px 20px;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-
+    .modal-header { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; justify-content: space-between; }
     .modal-header h3 { margin: 0; font-size: 17px; font-weight: 700; }
     .modal-body { padding: 18px 20px; }
-    .modal-footer {
-      padding: 14px 20px;
-      border-top: 1px solid var(--border);
-      display: flex;
-      justify-content: flex-end;
-      gap: 8px;
-    }
+    .modal-footer { padding: 14px 20px; border-top: 1px solid var(--border); display: flex; justify-content: flex-end; gap: 8px; }
 
     .toast {
       position: fixed;
@@ -906,34 +685,13 @@
     /* ==================== PRINT RULES ==================== */
     #printMount { display: none; }
 
-    @page {
-      size: A4 portrait;
-      margin: 0;
-    }
+    @page { size: A4 portrait; margin: 0; }
 
     @media print {
-      html, body {
-        background: #FFFFFF !important;
-        margin: 0 !important;
-        padding: 0 !important;
-        width: 210mm !important;
-      }
-
-      #loginView, #appView, .modal-backdrop, .toast {
-        display: none !important;
-      }
-
-      #printMount {
-        display: block !important;
-      }
-
-      .a4-page {
-        box-shadow: none !important;
-        margin: 0 !important;
-        width: 210mm !important;
-        height: 297mm !important;
-        padding: 7mm 8mm !important;
-      }
+      html, body { background: #FFFFFF !important; margin: 0 !important; padding: 0 !important; width: 210mm !important; }
+      #loginView, #appView, .modal-backdrop, .toast { display: none !important; }
+      #printMount { display: block !important; }
+      .a4-page { box-shadow: none !important; margin: 0 !important; width: 210mm !important; height: 297mm !important; padding: 7mm 8mm !important; }
     }
   </style>
 </head>
@@ -965,10 +723,23 @@
         </div>
 
         <h1>เข้าสู่ระบบใบปะหน้า</h1>
-        <p>กรอกรหัสสาขา (PIN) เพื่อเชื่อมต่อฐานข้อมูลสาขาและบันทึกประวัติลง Google Sheets</p>
+        <p>กรอกรหัสสาขา (PIN) — ระบบจะจำการเข้าสู่ระบบบนเครื่องนี้ไว้ 6 ชั่วโมง</p>
 
         <div class="form-row">
-          <input id="pinInput" type="password" inputmode="numeric" maxlength="10" class="pin-input" placeholder="••••" autocomplete="off" />
+          <input
+            id="pinInput"
+            name="branch_pin_nofill"
+            type="text"
+            inputmode="numeric"
+            maxlength="10"
+            class="pin-input"
+            placeholder="••••"
+            autocomplete="one-time-code"
+            autocorrect="off"
+            autocapitalize="off"
+            spellcheck="false"
+            value=""
+          />
         </div>
 
         <button id="loginBtn" class="btn btn-primary btn-block" style="padding: 12px; font-size:15.5px;">เข้าสู่ระบบ</button>
@@ -1014,7 +785,7 @@
 
     <div class="app-main">
 
-      <!-- ===== TAB 0: HOME (MATCHING SCREENSHOT) ===== -->
+      <!-- ===== TAB 0: HOME ===== -->
       <section id="tabHome" class="home-wrap">
         <div class="hero-pill">
           <span class="jm-white-tag">Jaymart</span>
@@ -1027,7 +798,6 @@
         <p class="home-subtitle">พิมพ์ใบปะหน้ากล่องสินค้า และจัดการประวัติการโอน</p>
 
         <div class="home-cards">
-          <!-- Card 1 -->
           <div class="home-card" id="goCreateCard">
             <div>
               <div class="home-card-icon red">
@@ -1038,12 +808,11 @@
                 </svg>
               </div>
               <h3>พิมพ์ใบปะหน้ากล่อง</h3>
-              <p>วางเลข Tracking (บน) และเลขเอกสาร (ล่าง) เพื่อดึงข้อมูลสาขาอัตโนมัติ จัดหน้าขนาด A4 แนวตั้ง 2 ใบ/แผ่น พร้อมรันเลขกล่อง</p>
+              <p>วางเลข Tracking (บน) และเลขเอกสาร (ล่าง) เพื่อดึงข้อมูลสาขาอัตโนมัติ จัดหน้าขนาด A4 แนวตั้ง 2 ใบ/แผ่น (บน-ล่าง) พร้อมรันเลขกล่อง</p>
             </div>
             <div class="home-card-link red">เปิดระบบพิมพ์ใบปะหน้า →</div>
           </div>
 
-          <!-- Card 2 -->
           <div class="home-card" id="goHistoryCard">
             <div>
               <div class="home-card-icon slate">
@@ -1071,7 +840,6 @@
       <main id="tabCreate" class="main-container hidden">
         <div class="workspace-grid">
 
-          <!-- LEFT COLUMN: DEFAULTS + INPUT -->
           <div style="display:flex; flex-direction:column; gap:16px;">
 
             <section class="card">
@@ -1108,7 +876,6 @@
                   <button class="sub-tab" data-mode="manual">✍️ กรอกเอง / สร้างเลข</button>
                 </div>
 
-                <!-- SMART PASTE MODE -->
                 <div id="modePaste">
                   <label class="field-label" for="smartPasteInput">วางเลข Tracking (อยู่บน) และเลขเอกสาร (อยู่ล่าง)</label>
                   <textarea id="smartPasteInput" class="textarea paste-box" placeholder="วางทีละคู่ หรือวางต่อกันหลายคู่ได้เลย เช่น:&#10;STS0126111614803024&#10;161480261100013&#10;STS0226111614801170&#10;161480261100014"></textarea>
@@ -1121,7 +888,6 @@
                   </div>
                 </div>
 
-                <!-- MANUAL / AUTO-GENERATE MODE -->
                 <div id="modeManual" class="hidden">
                   <div class="form-row">
                     <label class="field-label" for="mTypeSelect">ประเภทงาน (ช่วยสร้าง Tracking)</label>
@@ -1166,7 +932,6 @@
             </section>
           </div>
 
-          <!-- RIGHT COLUMN: QUEUE & LIVE PREVIEW -->
           <div style="display:flex; flex-direction:column; gap:16px; min-width:0;">
 
             <section class="card">
@@ -1180,6 +945,14 @@
               </div>
 
               <div class="card-body">
+                <div class="mode-toggle-bar">
+                  <label>
+                    <input type="checkbox" id="duplicatePerSheetToggle" checked style="width:17px; height:17px; accent-color:#C81018;" />
+                    <span>พิมพ์บน-ล่างซ้ำกัน 2 ใบต่อ 1 กล่อง (เต็มแผ่น A4)</span>
+                  </label>
+                  <span style="font-size:12px; color:#64748B;">เอาติ๊กออกหากต้องการจับคู่ 2 ปลายทางใน 1 แผ่น</span>
+                </div>
+
                 <div class="stats-strip">
                   <div class="stat-box">
                     <div id="statItems" class="val">0</div>
@@ -1351,22 +1124,23 @@
     </div>
   </div>
 
-  <!-- Shared Datalist for Branch Search -->
   <datalist id="branchDatalist"></datalist>
-
-  <!-- Print-only DOM mount -->
   <div id="printMount"></div>
-
-  <!-- Toast -->
   <div id="toast" class="toast hidden"></div>
 
   <script>
     const GAS_API_URL = 'https://script.google.com/macros/s/AKfycbyr9fBWEQyTxh0ashPymLJ0Zntm2GF61NhpNeN8aoLq5rjs14I-4rQr_DaUtICm5Vg-6A/exec';
+    const SESSION_HOURS_MS = 6 * 60 * 60 * 1000; // 6 ชั่วโมง
 
     const STORAGE_KEYS = {
       TOKEN: 'jm_cover_session_token',
+      EXPIRES: 'jm_cover_session_expires',
+      BRANCHES: 'jm_cover_cached_branches',
+      RULES: 'jm_cover_cached_rules',
+      UPDATED_AT: 'jm_cover_cached_updated_at',
       SENDER: 'jm_cover_sender_name',
-      ORIGIN: 'jm_cover_default_origin'
+      ORIGIN: 'jm_cover_default_origin',
+      DUP_MODE: 'jm_cover_dup_per_sheet'
     };
 
     const DEFAULT_RULES = [
@@ -1387,7 +1161,8 @@
       lastSavedSignature: '',
       logs: [],
       selectedLogKeys: new Set(),
-      previewVisible: true
+      previewVisible: true,
+      duplicatePerSheet: true
     };
 
     function $(id) { return document.getElementById(id); }
@@ -1429,6 +1204,14 @@
       el.classList.remove('hidden');
       clearTimeout(toastTimer);
       toastTimer = setTimeout(() => el.classList.add('hidden'), 3200);
+    }
+
+    function saveCatalogCache(branches, rules, updatedAt) {
+      try {
+        localStorage.setItem(STORAGE_KEYS.BRANCHES, JSON.stringify(branches || []));
+        localStorage.setItem(STORAGE_KEYS.RULES, JSON.stringify(rules || DEFAULT_RULES));
+        localStorage.setItem(STORAGE_KEYS.UPDATED_AT, updatedAt || '');
+      } catch (e) {}
     }
 
     function setBranches(list) {
@@ -1474,7 +1257,9 @@
         if (data.code === 'UNAUTHORIZED') {
           logout(true);
         }
-        throw new Error(data.error || 'การเชื่อมต่อล้มเหลว');
+        const err = new Error(data.error || 'การเชื่อมต่อล้มเหลว');
+        err.code = data.code || '';
+        throw err;
       }
       return data;
     }
@@ -1495,7 +1280,12 @@
       }
     }
 
-    // ==================== AUTH ====================
+    // ==================== AUTH (6-HOUR PERSISTENT SESSION) ====================
+    function clearSessionStorage() {
+      localStorage.removeItem(STORAGE_KEYS.TOKEN);
+      localStorage.removeItem(STORAGE_KEYS.EXPIRES);
+    }
+
     async function handleLogin() {
       const pin = $('pinInput').value.trim();
       const alertEl = $('loginAlert');
@@ -1513,8 +1303,12 @@
 
       try {
         const res = await apiCall({ action: 'login', pin });
+        const expiresAt = res.expiresAt || (Date.now() + SESSION_HOURS_MS);
         state.token = res.token;
         localStorage.setItem(STORAGE_KEYS.TOKEN, res.token);
+        localStorage.setItem(STORAGE_KEYS.EXPIRES, String(expiresAt));
+        saveCatalogCache(res.branches, res.rules, res.updatedAt);
+
         setBranches(res.branches);
         setRules(res.rules);
         enterApp(`เชื่อมต่อฐานข้อมูลแล้ว • ${state.branches.length} สาขา (อัปเดต ${res.updatedAt || 'ล่าสุด'})`);
@@ -1529,22 +1323,45 @@
 
     async function tryAutoResume() {
       const savedToken = localStorage.getItem(STORAGE_KEYS.TOKEN);
-      if (!savedToken) return;
+      const savedExp = Number(localStorage.getItem(STORAGE_KEYS.EXPIRES) || 0);
 
-      const btn = $('loginBtn');
-      btn.disabled = true;
-      btn.textContent = 'กำลังเชื่อมต่อเซสชันเดิม...';
+      if (!savedToken || !savedExp || Date.now() >= savedExp) {
+        clearSessionStorage();
+        $('pinInput').value = '';
+        setTimeout(() => { $('pinInput').value = ''; $('pinInput').focus(); }, 80);
+        return;
+      }
+
+      // เข้าหน้าหลักทันทีจาก cache ในเครื่อง ไม่ต้องรอโหลดหรือเด้งกลับหน้า PIN
+      state.token = savedToken;
+      let cachedBranches = [];
+      let cachedRules = DEFAULT_RULES;
+      let cachedUpdated = '';
+      try {
+        cachedBranches = JSON.parse(localStorage.getItem(STORAGE_KEYS.BRANCHES) || '[]');
+        cachedRules = JSON.parse(localStorage.getItem(STORAGE_KEYS.RULES) || '[]');
+        cachedUpdated = localStorage.getItem(STORAGE_KEYS.UPDATED_AT) || '';
+      } catch (e) {}
+
+      if (cachedBranches.length) {
+        setBranches(cachedBranches);
+        setRules(cachedRules);
+        enterApp(`เชื่อมต่อฐานข้อมูลแล้ว • ${cachedBranches.length} สาขา (อัปเดต ${cachedUpdated || 'ล่าสุด'})`);
+      } else {
+        enterApp('กำลังซิงก์ข้อมูลสาขา...');
+      }
+
+      // ซิงก์เบื้องหลัง (ถ้าเน็ตหลุดชั่วคราวจะไม่เตะออก จะเตะออกเฉพาะเมื่อเซิร์ฟเวอร์แจ้ง UNAUTHORIZED)
       try {
         const res = await apiCall({ action: 'init', token: savedToken });
-        state.token = savedToken;
+        saveCatalogCache(res.branches, res.rules, res.updatedAt);
         setBranches(res.branches);
         setRules(res.rules);
-        enterApp(`เชื่อมต่อฐานข้อมูลแล้ว • ${state.branches.length} สาขา (อัปเดต ${res.updatedAt || 'ล่าสุด'})`);
-      } catch (e) {
-        localStorage.removeItem(STORAGE_KEYS.TOKEN);
-      } finally {
-        btn.disabled = false;
-        btn.textContent = 'เข้าสู่ระบบ';
+        $('catalogStatusText').textContent = `เชื่อมต่อฐานข้อมูลแล้ว • ${state.branches.length} สาขา (อัปเดต ${res.updatedAt || 'ล่าสุด'})`;
+      } catch (err) {
+        if (err && err.code !== 'UNAUTHORIZED') {
+          $('catalogStatusText').textContent = `ใช้งานจากข้อมูลล่าสุดในเครื่อง • ${state.branches.length} สาขา`;
+        }
       }
     }
 
@@ -1555,6 +1372,10 @@
 
       const savedSender = localStorage.getItem(STORAGE_KEYS.SENDER) || '';
       const savedOrigin = localStorage.getItem(STORAGE_KEYS.ORIGIN) || '1480';
+      const savedDup = localStorage.getItem(STORAGE_KEYS.DUP_MODE);
+      state.duplicatePerSheet = savedDup === null ? true : savedDup === 'true';
+
+      $('duplicatePerSheetToggle').checked = state.duplicatePerSheet;
       $('senderInput').value = savedSender;
       $('defaultOriginInput').value = savedOrigin;
       $('mOriginInput').value = savedOrigin;
@@ -1566,14 +1387,17 @@
     }
 
     function logout(expired) {
-      localStorage.removeItem(STORAGE_KEYS.TOKEN);
+      clearSessionStorage();
       state.token = '';
       $('appView').classList.add('hidden');
       $('loginView').classList.remove('hidden');
       $('pinInput').value = '';
+      setTimeout(() => { $('pinInput').value = ''; $('pinInput').focus(); }, 80);
       if (expired) {
-        $('loginAlert').textContent = 'เซสชันหมดอายุ กรุณากรอก PIN ใหม่อีกครั้ง';
+        $('loginAlert').textContent = 'เซสชันหมดอายุ (ครบ 6 ชั่วโมง) กรุณากรอกรหัส PIN ใหม่อีกครั้ง';
         $('loginAlert').classList.remove('hidden');
+      } else {
+        $('loginAlert').classList.add('hidden');
       }
     }
 
@@ -1710,7 +1534,12 @@
       items.forEach(it => {
         const total = Math.max(1, parseInt(it.boxCount, 10) || 1);
         for (let b = 1; b <= total; b++) {
-          slips.push({ ...it, boxIndex: b, boxTotal: total });
+          const slip = { ...it, boxIndex: b, boxTotal: total };
+          slips.push(slip);
+          // ค่าเริ่มต้น: พิมพ์ซ้ำบน-ล่าง 2 ใบต่อ 1 กล่อง เต็มแผ่น A4
+          if (state.duplicatePerSheet) {
+            slips.push({ ...slip });
+          }
         }
       });
       return slips;
@@ -2106,7 +1935,7 @@
         return;
       }
 
-      $('historyStatus').textContent = `แสดง ${state.logs.length} รายการล่าสุด (ติ๊กเลือกหลายรายการเพื่อพิมพ์ซ้ำแบบ 2 ใบ/แผ่น A4 ได้)`;
+      $('historyStatus').textContent = `แสดง ${state.logs.length} รายการล่าสุด (ติ๊กเลือกหลายรายการเพื่อพิมพ์ซ้ำได้)`;
 
       tbody.innerHTML = state.logs.map((r, i) => `
         <tr>
@@ -2190,12 +2019,19 @@
       btn.addEventListener('click', () => switchTab(btn.dataset.tab));
     });
 
+    $('duplicatePerSheetToggle').addEventListener('change', () => {
+      state.duplicatePerSheet = $('duplicatePerSheetToggle').checked;
+      localStorage.setItem(STORAGE_KEYS.DUP_MODE, String(state.duplicatePerSheet));
+      renderQueue();
+    });
+
     $('refreshCatalogBtn').addEventListener('click', async () => {
       const btn = $('refreshCatalogBtn');
       btn.disabled = true;
       btn.textContent = 'กำลังโหลด...';
       try {
         const res = await apiCall({ action: 'refreshCatalog', token: state.token });
+        saveCatalogCache(res.branches, res.rules, res.updatedAt);
         setBranches(res.branches);
         setRules(res.rules);
         $('catalogStatusText').textContent = `เชื่อมต่อฐานข้อมูลแล้ว • ${state.branches.length} สาขา (อัปเดต ${res.updatedAt})`;
